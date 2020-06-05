@@ -44,7 +44,32 @@ const itemsToCollect = document.querySelectorAll(".items-grid li")
 for (const item of itemsToCollect){
     item.addEventListener("click",handleSelectedItem)
 }
+const collectedItems = document.querySelector("input[name=items]")
+
+
+let selectedItems = []
 
 function handleSelectedItem(event){
-    console.log(event.target)
+
+    const itemLi = event.target
+    itemLi.classList.toggle("selected") // toggle adiciona ou remove
+    const itemId = itemLi.dataset.id
+
+    const alreadySelected = selectedItems.findIndex( item => {
+        const itemFound = item == itemId
+        return itemFound
+    })
+    //verifica se esta selecionado
+    if(alreadySelected >= 0){
+        //tirar da seleção
+        const filteredItems = selectedItems.filter(item =>{ 
+            const itemIsDifferent = item != itemId
+            return itemIsDifferent
+        })
+        selectedItems = filteredItems
+    }else{
+        selectedItems.push(itemId)
+    }
+    collectedItems.value = selectedItems
+
 }

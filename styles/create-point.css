@@ -144,10 +144,13 @@ form button:hover{
 .items-grid li.selected{
     background-color: #E1FAEC;
     border: 2px solid #34cb79;
-    
+
 }
 
-
+.items-grid li img,
+.items-grid li span{
+    pointer-events: none;
+}
 
 
 
