@@ -1,0 +1,23 @@
+{
+  "name": "NLW_Ecoleta",
+  "version": "1.0.0",
+  "description": "Repositório criado baseado na primeira Edição da Next Level Week",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaiumi/NLW_Ecoleta.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaiumi/NLW_Ecoleta/issues"
+  },
+  "homepage": "https://github.com/kaiumi/NLW_Ecoleta#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
