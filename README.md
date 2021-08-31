@@ -40,14 +40,6 @@ Com as dependência instaladas e o banco de dados pronto, execute este comando p
 $ npm start
 ```
 
-### Iniciar App Web
-
-Após iniciar a execução do servidor, inicie a aplicação no terminal executando o comando:
-
-```bash
-$ npm start
-```
-
 
 **E pronto, agora você pode usar à vontade toda a aplicação.** :)
 
